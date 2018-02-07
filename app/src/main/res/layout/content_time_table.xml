@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:text="00:00"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnstart"
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_alignRight="@+id/text_view_countdown"
+        android:layout_alignEnd="@+id/text_view_countdown" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnstart"
+        android:layout_alignBottom="@+id/btnstart"
+        android:layout_alignLeft="@+id/text_view_countdown"
+        android:layout_alignStart="@+id/text_view_countdown"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp" />
+
+</RelativeLayout>
